@@ -1,153 +1,186 @@
-:root{
-  --bg:#0b0c10;
-  --card:#12141a;
-  --text:#e9eef6;
-  --muted:#a7b0bf;
-  --line:#232634;
-  --accent:#6aa7ff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Preciosa Muujiza Ngoy Kalumba | AI & Business Analytics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-*{ box-sizing:border-box; }
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top">Preciosa Ngoy Kalumba</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background: var(--bg);
-  color: var(--text);
-  line-height:1.6;
-}
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Preciosa Muujiza Ngoy Kalumba</h1>
+          <p class="subtitle">AI & Business Analytics Graduate Student</p>
+          <p class="summary">
+            I build data-driven solutions with machine learning, statistical modeling, and database design.
+            My projects focus on applying AI to structured business problems and communicating results clearly.
+          </p>
 
-a{ color: var(--accent); text-decoration:none; }
-a:hover{ text-decoration:underline; }
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="https://linkedin.com/in/preciosa-ngoy-kalumba" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
 
-.container{
-  width:min(980px, 92%);
-  margin:0 auto;
-}
+        <div class="hero-card">
+          <div class="card">
+            <div class="card-title">Quick Focus</div>
+            <ul class="card-list">
+              <li>Machine Learning (classification, ensembles)</li>
+              <li>Regression & statistical interpretation</li>
+              <li>Relational modeling (3NF), OLTP/OLAP, Star Schema</li>
+              <li>Tableau dashboards & storytelling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.header{
-  padding:52px 0 20px;
-}
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="section-subtitle">
+          A few projects that represent my work across ML, analytics, and database architecture.
+        </p>
 
-h1{
-  margin:0 0 8px;
-  font-size: 34px;
-  letter-spacing:.2px;
-}
+        <div class="grid">
+          <article class="project">
+            <h3>Loan Payback Prediction (Machine Learning)</h3>
+            <p>
+              Built and compared classification models (including ensemble/hybrid approaches) to predict loan repayment risk.
+              Evaluated performance using ROC-AUC.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>XGBoost</span><span>LightGBM</span><span>ROC-AUC</span>
+            </div>
+            <a class="link" href="https://github.com/Muujiza470/loan-payback-ml" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
 
-.subtitle{
-  margin:0 0 14px;
-  color:var(--muted);
-}
+          <article class="project">
+            <h3>Smart Retail Analytics Hub (Oracle 23ai)</h3>
+            <p>
+              Designed a hybrid retail data platform combining normalized OLTP design with an OLAP star schema
+              for analytics and reporting.
+            </p>
+            <div class="tags">
+              <span>SQL</span><span>Oracle</span><span>OLTP</span><span>OLAP</span><span>Star Schema</span>
+            </div>
+            <a class="link" href="https://github.com/Muujiza470/smart-retail-analytic-hub" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
 
-.summary{
-  margin:0 0 18px;
-  max-width: 72ch;
-}
+          <article class="project">
+            <h3>Hospital Database System Design</h3>
+            <p>
+              Designed a relational hospital database using ERD/EERD modeling and normalization principles.
+              Included structured SQL queries for operational reporting.
+            </p>
+            <div class="tags">
+              <span>SQL</span><span>ERD/EERD</span><span>3NF</span><span>Data Modeling</span>
+            </div>
+            <a class="link" href="https://github.com/Muujiza470/hospital-database-design" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
 
-.links{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  flex-wrap:wrap;
-  color:var(--muted);
-}
+          <article class="project">
+            <h3>Flight Route Regression Analysis</h3>
+            <p>
+              Applied linear and quadratic regression in R to analyze airfare pricing patterns and compare model fit.
+            </p>
+            <div class="tags">
+              <span>R</span><span>Regression</span><span>Model Fit</span><span>Interpretation</span>
+            </div>
+            <a class="link" href="https://github.com/Muujiza470/flight-routes-or-logistic-regression" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
 
-.links a{ color:var(--muted); }
-.links a:hover{ color:var(--text); text-decoration:none; }
+          <article class="project">
+            <h3>Global Labor & Internet Visualization</h3>
+            <p>
+              Integrated multi-source global datasets and built a Tableau dashboard to explore labor participation,
+              migration, and internet access trends.
+            </p>
+            <div class="tags">
+              <span>Tableau</span><span>Data Viz</span><span>Data Integration</span>
+            </div>
+            <a class="link" href="https://github.com/Muujiza470/global-labor-internet-viz" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.section{
-  padding:26px 0;
-  border-top:1px solid var(--line);
-}
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-col">
+            <h4>AI & Analytics</h4>
+            <ul>
+              <li>Machine Learning (classification, ensembles)</li>
+              <li>Regression (linear, quadratic)</li>
+              <li>Model evaluation (ROC-AUC)</li>
+              <li>Data cleaning & feature engineering</li>
+            </ul>
+          </div>
 
-.section h2{
-  margin:0 0 12px;
-  font-size: 22px;
-}
+          <div class="skill-col">
+            <h4>Data & Databases</h4>
+            <ul>
+              <li>SQL (joins, aggregation, reporting)</li>
+              <li>Relational design (3NF)</li>
+              <li>OLTP vs OLAP</li>
+              <li>Star schema / dimensional modeling</li>
+            </ul>
+          </div>
 
-.grid-2{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap:14px;
-}
+          <div class="skill-col">
+            <h4>Tools</h4>
+            <ul>
+              <li>Python, R</li>
+              <li>Oracle, GitHub</li>
+              <li>Tableau</li>
+              <li>Jupyter Notebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.card{
-  background: var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:16px;
-}
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-subtitle">
+          If you'd like to connect about internships, projects, or analytics work, reach out here:
+        </p>
 
-.card h3{
-  margin:0 0 8px;
-  font-size: 18px;
-}
+        <div class="contact-box">
+          <a class="btn primary" href="https://linkedin.com/in/preciosa-ngoy-kalumba" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="mailto:preciosangoykalumba@gmail.com">Email</a>
+          <a class="btn ghost" href="https://github.com/Muujiza470" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.card ul{
-  margin:10px 0 0;
-  padding-left: 18px;
-  color: var(--muted);
-}
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Preciosa Muujiza Ngoy Kalumba</span>
+    </div>
+  </footer>
 
-.card li{ margin:6px 0; }
-
-.projects{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap:14px;
-}
-
-.project .meta{
-  margin:0 0 10px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.project-links{
-  display:flex;
-  gap:14px;
-  margin-top: 10px;
-  flex-wrap:wrap;
-}
-
-.project-links a{
-  color: var(--accent);
-}
-
-.note{
-  color:var(--muted);
-  margin-top: 14px;
-}
-
-.btn{
-  display:inline-block;
-  padding:10px 14px;
-  border-radius:10px;
-  background: var(--accent);
-  color:#081018;
-  font-weight: 700;
-  margin-right:10px;
-}
-
-.btn:hover{ text-decoration:none; filter: brightness(1.05); }
-
-.btn-outline{
-  background: transparent;
-  border:1px solid var(--line);
-  color: var(--text);
-}
-
-.cta{ margin: 14px 0 10px; }
-
-.footer{
-  padding: 24px 0 48px;
-  color: var(--muted);
-  text-align:center;
-}
-
-/* Mobile */
-@media (max-width: 760px){
-  .grid-2, .projects{ grid-template-columns: 1fr; }
-  h1{ font-size: 28px; }
-}
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
