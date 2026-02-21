@@ -1,186 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Preciosa Muujiza Ngoy Kalumba | AI & Business Analytics</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+:root{
+  --bg:#0b0f17;
+  --card:#0f172a;
+  --text:#0f172a;
+  --muted:#64748b;
+  --paper:#ffffff;
+  --line:#e2e8f0;
+  --accent:#2563eb;
+  --accent2:#0ea5e9;
+}
 
-<body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="#top">Preciosa Ngoy Kalumba</a>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+*{ box-sizing:border-box; }
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Preciosa Muujiza Ngoy Kalumba</h1>
-          <p class="subtitle">AI & Business Analytics Graduate Student</p>
-          <p class="summary">
-            I build data-driven solutions with machine learning, statistical modeling, and database design.
-            My projects focus on applying AI to structured business problems and communicating results clearly.
-          </p>
+html{ scroll-behavior:smooth; }
 
-          <div class="cta-row">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" href="https://linkedin.com/in/preciosa-ngoy-kalumba" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#f6f7fb;
+  color:#0f172a;
+  line-height:1.6;
+}
 
-        <div class="hero-card">
-          <div class="card">
-            <div class="card-title">Quick Focus</div>
-            <ul class="card-list">
-              <li>Machine Learning (classification, ensembles)</li>
-              <li>Regression & statistical interpretation</li>
-              <li>Relational modeling (3NF), OLTP/OLAP, Star Schema</li>
-              <li>Tableau dashboards & storytelling</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+.container{
+  width:min(1100px, 92%);
+  margin:0 auto;
+}
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Selected Projects</h2>
-        <p class="section-subtitle">
-          A few projects that represent my work across ML, analytics, and database architecture.
-        </p>
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(246,247,251,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--line);
+}
 
-        <div class="grid">
-          <article class="project">
-            <h3>Loan Payback Prediction (Machine Learning)</h3>
-            <p>
-              Built and compared classification models (including ensemble/hybrid approaches) to predict loan repayment risk.
-              Evaluated performance using ROC-AUC.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>XGBoost</span><span>LightGBM</span><span>ROC-AUC</span>
-            </div>
-            <a class="link" href="https://github.com/Muujiza470/loan-payback-ml" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
+.topbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+}
 
-          <article class="project">
-            <h3>Smart Retail Analytics Hub (Oracle 23ai)</h3>
-            <p>
-              Designed a hybrid retail data platform combining normalized OLTP design with an OLAP star schema
-              for analytics and reporting.
-            </p>
-            <div class="tags">
-              <span>SQL</span><span>Oracle</span><span>OLTP</span><span>OLAP</span><span>Star Schema</span>
-            </div>
-            <a class="link" href="https://github.com/Muujiza470/smart-retail-analytic-hub" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
+.brand{
+  font-weight:700;
+  text-decoration:none;
+  color:#0f172a;
+}
 
-          <article class="project">
-            <h3>Hospital Database System Design</h3>
-            <p>
-              Designed a relational hospital database using ERD/EERD modeling and normalization principles.
-              Included structured SQL queries for operational reporting.
-            </p>
-            <div class="tags">
-              <span>SQL</span><span>ERD/EERD</span><span>3NF</span><span>Data Modeling</span>
-            </div>
-            <a class="link" href="https://github.com/Muujiza470/hospital-database-design" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
+.nav a{
+  text-decoration:none;
+  color:#0f172a;
+  margin-left:18px;
+  font-weight:600;
+  font-size:14px;
+}
 
-          <article class="project">
-            <h3>Flight Route Regression Analysis</h3>
-            <p>
-              Applied linear and quadratic regression in R to analyze airfare pricing patterns and compare model fit.
-            </p>
-            <div class="tags">
-              <span>R</span><span>Regression</span><span>Model Fit</span><span>Interpretation</span>
-            </div>
-            <a class="link" href="https://github.com/Muujiza470/flight-routes-or-logistic-regression" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
+.nav a:hover{ color:var(--accent); }
 
-          <article class="project">
-            <h3>Global Labor & Internet Visualization</h3>
-            <p>
-              Integrated multi-source global datasets and built a Tableau dashboard to explore labor participation,
-              migration, and internet access trends.
-            </p>
-            <div class="tags">
-              <span>Tableau</span><span>Data Viz</span><span>Data Integration</span>
-            </div>
-            <a class="link" href="https://github.com/Muujiza470/global-labor-internet-viz" target="_blank" rel="noopener">View on GitHub</a>
-          </article>
-        </div>
-      </div>
-    </section>
+.hero{
+  background:linear-gradient(135deg, #0b0f17 0%, #111827 55%, #0b0f17 100%);
+  color:#fff;
+  padding:70px 0;
+  border-bottom:1px solid rgba(226,232,240,0.15);
+}
 
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills">
-          <div class="skill-col">
-            <h4>AI & Analytics</h4>
-            <ul>
-              <li>Machine Learning (classification, ensembles)</li>
-              <li>Regression (linear, quadratic)</li>
-              <li>Model evaluation (ROC-AUC)</li>
-              <li>Data cleaning & feature engineering</li>
-            </ul>
-          </div>
+.hero-inner{
+  display:grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap:28px;
+  align-items:start;
+}
 
-          <div class="skill-col">
-            <h4>Data & Databases</h4>
-            <ul>
-              <li>SQL (joins, aggregation, reporting)</li>
-              <li>Relational design (3NF)</li>
-              <li>OLTP vs OLAP</li>
-              <li>Star schema / dimensional modeling</li>
-            </ul>
-          </div>
+.hero h1{
+  margin:0 0 8px;
+  font-size:34px;
+  letter-spacing:0.2px;
+}
 
-          <div class="skill-col">
-            <h4>Tools</h4>
-            <ul>
-              <li>Python, R</li>
-              <li>Oracle, GitHub</li>
-              <li>Tableau</li>
-              <li>Jupyter Notebook</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+.subtitle{
+  margin:0 0 14px;
+  color:rgba(255,255,255,0.78);
+  font-weight:600;
+}
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p class="section-subtitle">
-          If you'd like to connect about internships, projects, or analytics work, reach out here:
-        </p>
+.summary{
+  margin:0 0 22px;
+  color:rgba(255,255,255,0.85);
+  max-width:60ch;
+}
 
-        <div class="contact-box">
-          <a class="btn primary" href="https://linkedin.com/in/preciosa-ngoy-kalumba" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn ghost" href="mailto:preciosangoykalumba@gmail.com">Email</a>
-          <a class="btn ghost" href="https://github.com/Muujiza470" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
+.card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(226,232,240,0.18);
+  border-radius:14px;
+  padding:18px 18px 12px;
+}
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Preciosa Muujiza Ngoy Kalumba</span>
-    </div>
-  </footer>
+.card-title{
+  font-weight:700;
+  margin-bottom:10px;
+}
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+.card-list{
+  margin:0;
+  padding-left:18px;
+  color:rgba(255,255,255,0.85);
+}
+
+.section{
+  padding:58px 0;
+}
+
+.section.alt{
+  background:#ffffff;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+h2{
+  margin:0 0 8px;
+  font-size:24px;
+}
+
+.section-subtitle{
+  margin:0 0 22px;
+  color:var(--muted);
+  max-width:70ch;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:18px;
+}
+
+.project{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+.project h3{
+  margin:0 0 8px;
+  font-size:18px;
+}
+
+.project p{
+  margin:0 0 12px;
+  color:#334155;
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:12px;
+}
+
+.tags span{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#f8fafc;
+  color:#0f172a;
+}
+
+.link{
+  display:inline-block;
+  font-weight:700;
+  text-decoration:none;
+  color:var(--accent);
+}
+
+.link:hover{ text-decoration:underline; }
+
+.skills{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:18px;
+}
+
+.skill-col{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px;
+}
+
+.skill-col h4{
+  margin:0 0 10px;
+  font-size:16px;
+}
+
+.skill-col ul{
+  margin:0;
+  padding-left:18px;
+  color:#334155;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+  border:1px solid transparent;
+}
+
+.cta-row{ display:flex; gap:10px; }
+
+.btn.primary{
+  background:var(--accent);
+  color:#fff;
+}
+
+.btn.primary:hover{ background:#1d4ed8; }
+
+.btn.ghost{
+  background:transparent;
+  color:#fff;
+  border-color:rgba(226,232,240,0.35);
+}
+
+.section .btn.ghost{
+  color:#0f172a;
+  border-color:var(--line);
+}
+
+.btn.ghost:hover{
+  border-color:var(--accent2);
+  color:var(--accent2);
+}
+
+.contact-box{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.footer{
+  padding:18px 0;
+  color:#64748b;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:center;
+  border-top:1px solid var(--line);
+  padding-top:16px;
+}
+
+/* Responsive */
+@media (max-width: 860px){
+  .hero-inner{ grid-template-columns: 1fr; }
+  .grid{ grid-template-columns: 1fr; }
+  .skills{ grid-template-columns: 1fr; }
+  .nav a{ margin-left:12px; }
+}
