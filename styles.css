@@ -1,1 +1,153 @@
+:root{
+  --bg:#0b0c10;
+  --card:#12141a;
+  --text:#e9eef6;
+  --muted:#a7b0bf;
+  --line:#232634;
+  --accent:#6aa7ff;
+}
 
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.6;
+}
+
+a{ color: var(--accent); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.container{
+  width:min(980px, 92%);
+  margin:0 auto;
+}
+
+.header{
+  padding:52px 0 20px;
+}
+
+h1{
+  margin:0 0 8px;
+  font-size: 34px;
+  letter-spacing:.2px;
+}
+
+.subtitle{
+  margin:0 0 14px;
+  color:var(--muted);
+}
+
+.summary{
+  margin:0 0 18px;
+  max-width: 72ch;
+}
+
+.links{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+  color:var(--muted);
+}
+
+.links a{ color:var(--muted); }
+.links a:hover{ color:var(--text); text-decoration:none; }
+
+.section{
+  padding:26px 0;
+  border-top:1px solid var(--line);
+}
+
+.section h2{
+  margin:0 0 12px;
+  font-size: 22px;
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:14px;
+}
+
+.card{
+  background: var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:16px;
+}
+
+.card h3{
+  margin:0 0 8px;
+  font-size: 18px;
+}
+
+.card ul{
+  margin:10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.card li{ margin:6px 0; }
+
+.projects{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:14px;
+}
+
+.project .meta{
+  margin:0 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.project-links{
+  display:flex;
+  gap:14px;
+  margin-top: 10px;
+  flex-wrap:wrap;
+}
+
+.project-links a{
+  color: var(--accent);
+}
+
+.note{
+  color:var(--muted);
+  margin-top: 14px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:10px;
+  background: var(--accent);
+  color:#081018;
+  font-weight: 700;
+  margin-right:10px;
+}
+
+.btn:hover{ text-decoration:none; filter: brightness(1.05); }
+
+.btn-outline{
+  background: transparent;
+  border:1px solid var(--line);
+  color: var(--text);
+}
+
+.cta{ margin: 14px 0 10px; }
+
+.footer{
+  padding: 24px 0 48px;
+  color: var(--muted);
+  text-align:center;
+}
+
+/* Mobile */
+@media (max-width: 760px){
+  .grid-2, .projects{ grid-template-columns: 1fr; }
+  h1{ font-size: 28px; }
+}
