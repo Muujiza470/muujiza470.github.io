@@ -263,3 +263,88 @@ h2{
   .skills{ grid-template-columns: 1fr; }
   .nav a{ margin-left:12px; }
 }
+
+/* ---- Oct 2026 update ---- */
+.eyebrow{
+  margin:0 0 10px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.4px;
+  color:var(--accent2);
+}
+
+.cta-row{ flex-wrap:wrap; }
+
+.stats{ list-style:none; margin:0; padding:0; }
+.stats li{
+  display:flex; gap:12px; align-items:baseline;
+  padding:8px 0;
+  border-bottom:1px solid rgba(226,232,240,0.12);
+  color:rgba(255,255,255,0.85);
+  font-size:14px;
+}
+.stats li:last-child{ border-bottom:none; }
+.stats strong{
+  min-width:48px;
+  font-size:22px;
+  color:#fff;
+}
+
+.project-meta{
+  font-size:12px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  color:var(--accent);
+  margin-bottom:6px;
+}
+
+.project.featured{
+  grid-column:1 / -1;
+  border-color:#bfdbfe;
+  box-shadow:0 10px 26px rgba(37,99,235,0.12);
+}
+
+.bullets{
+  margin:0 0 12px;
+  padding-left:18px;
+  color:#334155;
+}
+.bullets li{ margin-bottom:4px; }
+.bullets a{ color:var(--accent); font-weight:600; text-decoration:none; }
+.bullets a:hover{ text-decoration:underline; }
+
+.timeline{ display:grid; gap:14px; margin-top:18px; }
+.job{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:12px;
+  padding:16px 18px 6px;
+}
+.job-head{
+  display:flex; flex-wrap:wrap;
+  justify-content:space-between; gap:4px 16px;
+  margin-bottom:8px;
+}
+.job-head h3{ margin:0; font-size:17px; }
+.job-date{ color:var(--muted); font-size:14px; font-weight:600; }
+
+.edu{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:18px;
+  margin-top:22px;
+}
+.edu li{ margin-bottom:6px; }
+
+@media (max-width: 860px){
+  .edu{ grid-template-columns:1fr; }
+  .hero h1{ font-size:28px; }
+  .nav a{ margin-left:10px; font-size:13px; }
+}
+@media (max-width: 520px){
+  .brand{ display:none; }
+  .topbar-inner{ justify-content:center; }
+  .nav a:first-child{ margin-left:0; }
+}
