@@ -348,3 +348,5 @@ h2{
   .topbar-inner{ justify-content:center; }
   .nav a:first-child{ margin-left:0; }
 }
+
+.link-row{ display:flex; flex-wrap:wrap; align-items:center; gap:16px; }
